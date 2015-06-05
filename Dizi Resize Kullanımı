@@ -1,0 +1,20 @@
+int dizi[];
+int sayi;
+	Console.WriteLine("Sayiyi girin: ");
+	Console.ReadLine(sayi);
+	
+	dizi[]=new int[sayi];
+	
+	for(int i=0;i<sayi;i++){
+		new dizi[i]=collectionArray[i];
+		collectionArray=new dizi;
+	}
+	
+	for(int j=0;j<dizi.length;j++){
+		dizi[j]=Math.Random(sayi);
+	}
+	
+	for(int j=dizi.length;j>0;j--){
+		Console.WriteLine(dizi[j]);
+	}
+	
