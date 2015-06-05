@@ -1,0 +1,20 @@
+int dizi[7]={1,5,8,9,4,98,4,4};
+int aranan=98,bas=0,son=6,i;
+	while(bas < son){
+		i=(bas+son)/3;
+		
+		if (dizi[i]== aranan){
+			Console.WriteLine("indis: "+i);
+			break;
+		}
+		
+		else if(dizi[i] > aranan){
+			son=i-1;
+		}
+		
+		else{
+			bas=i+1;
+		}
+		
+		return -1;	//bulunamadı
+	}
