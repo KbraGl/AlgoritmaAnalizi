@@ -1,0 +1,28 @@
+class tree(T){
+	Node root=null;
+	add(Node n);
+	remove(Node n);
+	search(Node n);
+	update(Node n1, Node n2);
+	Node findMax();
+	
+	class Node(T){
+		T value;
+		Node left;
+		Node right;
+		}
+			}
+
+	Node search(Node n){
+		Node p=null;
+		Node node=root;
+		
+		while(node!=null){
+			if(node.value == n.value){return;}
+			else if(node.value > n.value){node=node.left;}
+			else{node=node.right;}
+			return null;
+		}
+	}
+	
+		
